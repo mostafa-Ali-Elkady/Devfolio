@@ -1,7 +1,14 @@
 :root {
   --main-color: #0078ff;
 }
-
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+a:hover {
+  color: var(--main-color);
+}
 /* Start Header */
 header.header {
   background: url(../img/hero-bg.jpg), rgba(0, 0, 0, 0.7);
@@ -145,13 +152,13 @@ section {
   display: block;
   transition: 0.7s;
 }
-.work-box:hover img{
-  transform: scale(1.2) ;
+.work-box:hover img {
+  transform: scale(1.2);
 }
 /* End Portfolio */
 /* Start Slider */
 .slider-section {
-   background-image: linear-gradient(
+  background-image: linear-gradient(
       rgba(0, 120, 255, 0.7),
       rgba(0, 120, 255, 0.7)
     ),
@@ -175,3 +182,59 @@ section {
   height: 10px;
   border-radius: 50%;
 }
+/* Start BLog */
+.card-label {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: small;
+}
+/* End BLog */
+/* Start Contact */
+.contact {
+  background-image: linear-gradient(
+      rgba(0, 120, 255, 0.7),
+      rgba(0, 120, 255, 0.7)
+    ),
+    url(../img/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Start Contact */
+.contact-title::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 4px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+}
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-container:hover {
+  background-color: var(--main-color);
+}
+.icon-container:hover a {
+  color: #fff !important;
+}
+/* End Contact */
+/* Start Footer */
+footer {
+  background-color: #0062d3;
+  box-shadow: 0px -2px 4px #1155a1;
+}
+/* Start Footer */
