@@ -14,6 +14,13 @@ const counters = document.querySelectorAll(".count-num"),
 
 let activated = false;
 window.addEventListener("scroll", () => {
+  let nav = document.querySelector("#nav")
+
+  if (window.scrollY > 100) {
+    nav.classList.add('scrolled')
+  } else {
+    nav.classList.remove('scrolled')
+  }
 
   if (scrollY > container.offsetTop - container.offsetHeight - 200 && activated == false) {
     counters.forEach(counter => {
@@ -53,4 +60,14 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, 300);
   })
 
+  // navbar change bgcolor
+  // $(function () {
+  //   $(document).scroll(function () {
+  //     var $nav = $(".navbar");
+  //     $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+  //   });
+  // });
+
 });
+
+

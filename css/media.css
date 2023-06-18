@@ -14,9 +14,12 @@
     font-size: 2.3rem;
     font-weight: 700;
   }
+}
+@media screen and (max-width: 992px) {
   .navbar-nav {
     display: flex;
     align-items: center;
+    background-color: black;
   }
   .nav-item:hover::after,
   .nav-item.active-item::after {

@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/details-style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-- Start Header -->
     <header id="home">
-      <nav class="navbar navbar-expand-lg details-nav">
+      <nav class="navbar navbar-expand-lg" id="nav">
         <div class="container">
           <a
             class="navbar-brand fs-3 text-light pt-3 d-inline-block"
@@ -105,7 +106,7 @@
       <div class="content">
         <h2 class="text-white">PORTFOLIO DETAILS</h2>
         <ul class="d-flex list-unstyled">
-          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="index.html" class="text-white fw-bold">Home</a></li>
           <li class="text-light mx-3">|</li>
           <li><a href="#" class="text-light">Portfolio Details</a></li>
         </ul>
@@ -114,10 +115,10 @@
     <!-- End Header -->
 
     <!-- Start Details -->
-    <section class="details py-5">
+    <section class="details pt-5 bg-light">
       <div class="container">
-        <div class="details-content d-flex">
-          <div class="slider">
+        <div class="details-content row">
+          <div class="slider col-sm-12 col-lg-8">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -194,15 +195,22 @@
               </button>
             </div>
           </div>
-          <div class="text-content">
-            <h3>Blass</h3>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-              illum eius est velit, tempora aut nesciunt ad nemo amet voluptates
-              corporis, iure animi molestias error cum corrupti fugiat
-              praesentium. Blanditiis eligendi tenetur voluptas, numquam
-              similique quam! Aperiam, voluptatum eveniet, non vel mollitia
-              eaque omnis eum hic sit distinctio nulla architecto?
+          <div class="text-content p-3 bg-light col-sm-12 col-lg-4">
+            <div class="cart bg-white p-3 mb-5">
+              <h3 class="py-3">Project information</h3>
+              <p><span class="fw-bold">Category: </span>Web design</p>
+              <p><span class="fw-bold">Client </span>ASU Company</p>
+              <p><span class="fw-bold">Project date:</span>01 March, 2020</p>
+              <p><span class="fw-bold">Project URL </span>www.example.com/p></p>
+            </div>
+
+            <h3>This is an example of portfolio detail</h3>
+            <p>
+              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque
+              inventore commodi labore quia quia. Exercitationem repudiandae
+              officiis neque suscipit non officia eaque itaque enim. Voluptatem
+              officia accusantium nesciunt est omnis tempora consectetur
+              dignissimos. Sequi nulla at esse enim cum deserunt eius.
             </p>
           </div>
         </div>
@@ -225,9 +233,17 @@
     <!-- End Footer -->
 
     <!-- js files -->
-    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/typed.umd.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        let nav = document.querySelector("#nav");
+
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
