@@ -22,7 +22,7 @@
             >DevFolio</a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -30,7 +30,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars fa-xl text-white"></i>
+            <i class="fa-solid fa-bars fs-3 text-white"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -103,9 +103,9 @@
           </div>
         </div>
       </nav>
-      <div class="content">
-        <h2 class="text-white">PORTFOLIO DETAILS</h2>
-        <ul class="d-flex list-unstyled">
+      <div class="content text-center">
+        <h1 class="text-white portfolio-heading">PORTFOLIO DETAILS</h1>
+        <ul class="d-flex list-unstyled justify-content-center">
           <li><a href="index.html" class="text-white fw-bold">Home</a></li>
           <li class="text-light mx-3">|</li>
           <li><a href="#" class="text-light">Portfolio Details</a></li>
@@ -113,12 +113,11 @@
       </div>
     </header>
     <!-- End Header -->
-
     <!-- Start Details -->
     <section class="details pt-5 bg-light">
       <div class="container">
         <div class="details-content row">
-          <div class="slider col-sm-12 col-lg-8">
+          <div class="slider col-sm-12 col-lg-8 pb-5">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -195,16 +194,30 @@
               </button>
             </div>
           </div>
-          <div class="text-content p-3 bg-light col-sm-12 col-lg-4">
-            <div class="cart bg-white p-3 mb-5">
-              <h3 class="py-3">Project information</h3>
-              <p><span class="fw-bold">Category: </span>Web design</p>
-              <p><span class="fw-bold">Client </span>ASU Company</p>
-              <p><span class="fw-bold">Project date:</span>01 March, 2020</p>
-              <p><span class="fw-bold">Project URL </span>www.example.com/p></p>
+          <div
+            class="text-content p-3 bg-light col-sm-12 col-lg-4 mt-lg-0 mt-sm-4"
+          >
+            <div class="cart bg-light p-3 mb-5 shadow rounded">
+              <h3
+                class="py-3 border-bottom border-bottom-1 border-bottom-dark mb-3"
+              >
+                Project information
+              </h3>
+              <p class="text-muted">
+                <span class="fw-bold">Category: </span>Web design
+              </p>
+              <p class="text-muted">
+                <span class="fw-bold">Client </span>ASU Company
+              </p>
+              <p class="text-muted">
+                <span class="fw-bold">Project date:</span>01 March, 2020
+              </p>
+              <p class="text-muted">
+                <span class="fw-bold">Project URL </span>www.example.com/p>
+              </p>
             </div>
 
-            <h3>This is an example of portfolio detail</h3>
+            <h3 class="fw-bold mb-3">This is an example of portfolio detail</h3>
             <p>
               Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque
               inventore commodi labore quia quia. Exercitationem repudiandae
@@ -217,7 +230,6 @@
       </div>
     </section>
     <!-- End Details -->
-
     <!-- Start Footer -->
     <footer>
       <div class="container">

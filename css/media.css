@@ -4,7 +4,8 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  header .content h1 {
+  header .content h1,
+  .content h1.portfolio-heading {
     font-size: 3rem;
   }
   header.header {
@@ -13,6 +14,10 @@
   .section-title {
     font-size: 2.3rem;
     font-weight: 700;
+  }
+  .split-drop:hover .submenu {
+    display: block;
+    position: static !important;
   }
 }
 @media screen and (max-width: 992px) {

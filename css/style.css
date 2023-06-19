@@ -120,7 +120,7 @@ section {
 }
 
 .image img {
-  filter: drop-shadow(2px 2px 2px #807e7e) drop-shadow(-2px -2px 2px #807e7e);
+  filter: drop-shadow(2px 2px 2px #b7b5b5) drop-shadow(-2px -2px 2px #b7b5b5);
 }
 
 /* End About  */
@@ -201,6 +201,7 @@ section {
 .work-box img {
   display: block;
   transition: 0.7s;
+  cursor: pointer;
 }
 
 .work-box:hover img {

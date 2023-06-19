@@ -7,25 +7,24 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 55vh;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content h1.portfolio-heading {
+  font-size:3.5rem;
 }
 .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   position: relative;
-  top: 50px;
+  top: 90px;
   background-color: var(--main-color);
 }
-/* Start Details */
-
-/* End Details */
-
+/* Start footer */
 footer {
   background-color: #0062d3;
 }
-
 /* End Footer */
